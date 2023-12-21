@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summon</title>
+    <style>
+        body {
+            font-family: Consolas;
+            overflow: hidden;
+            transition: 1s;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        p {
+            margin: 0;
+        }
+        h2 {
+            position: absolute;
+        }
+        .content {
+            width: fit-content;
+            margin: auto;
+            text-align: center;
+        }
+        .part {
+            margin-bottom: 50px;
+        }
+        .text {
+            font-size: 4vw;
+        }
+        .summon {
+            font-size: 8vw;
+        }
+        .type {
+            margin: auto 20%;
+            text-align: center;
+        }
+        .bw {
+            width: 75%;
+            padding: 10px;
+            margin: 5px auto;
+            background-color: #404040;
+            border-radius: 50px;
+            text-align: center;
+            transition: 1s;
+        }
+        .bw:hover {
+            width: 85%;
+            background-color: #c0c0c0;
+            color: black;
+            transition: 0.5s;
+        }
+        .rc {
+            width: 75%;
+            padding: 10px;
+            margin: 5px auto;
+            background-color: #404040;
+            border-radius: 50px;
+            text-align: center;
+            transition: 1s;
+        }
+        .rc:hover {
+            width: 85%;
+            color: black;
+            background-color: hsl(0, 100%, 75%);
+            transition: 0.5s;
+        }
+        .dark {
+            background-color: black;
+            color: white;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                overflow-y: visible;
+            }
+            .text {
+                font-size: 8vw;
+            }
+            .summon {
+                font-size: 16vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="part">
+            <span class="text">text.</span><span class="summon">summon()</span>
+            <p>Press Any Key or Hold to Summon.</p>
+            <p>Press B or Double Click to Change Background.</p>
+            <p>Press F to Change Font.</p>
+        </div>
+        <div class="part">
+            <h1>random.summon()</h1>
+            <div class="type">
+                <a href="randomSummon/blackWhite.html"><div class="bw">Black and White</div></a>
+                <a href="randomSummon/randomColor.html"><div class="rc">Random Color</div></a>
+            </div>
+        </div>
+        <div class="part">
+            <h1>tail.summon()</h1>
+            <div class="type">
+                <a href="tailSummon/blackWhite.html"><div class="bw">Black and White</div></a>
+                <a href="tailSummon/randomColor.html"><div class="rc">Random Color</div></a>
+            </div>
+        </div>
+    </div>
+<script src="textSummon.js"></script>
+</body>
+</html>
